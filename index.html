@@ -14,38 +14,12 @@
   <script src= "js/popper.js"></script>
   <script src= "js/bootstrap.js"></script>
   <script src= "js/myScript.js"></script>
-  <script>
-    $(document).ready(function(){
-      $(window).scroll(function(){
-        $(".slideanim").each(function(){
-          var pos= $(this).offset().top;
-          var windowTop= $(window).scrollTop();
-
-          if(pos < windowTop + 400){
-            $(this).addClass("slide");
-          }
-        });
-        $("footer").each(function(){
-          var position= $(this).offset().top;
-          var winTop= $(window).scrollTop();
-
-          if(position < winTop + 1100){
-            $(this).addClass("slide");
-          }
-        })
-      });
-
-      $(".nav-link").click(function(){
-        $(this).toggleClass("active");
-      });
-    });
-  </script>
 </head>
 <body id= "myPage" data-spy= "scroll" data-target= ".navbar" data-offset= "60">
   <!-- PAGE NAVIGATION -->
-  <nav class= "navbar navbar-default navbar-expand-lg navbar-toggleable-md navbar-light bg-light sticky-top">
+  <nav class= "navbar navbar-default navbar-expand-lg navbar-toggleable-md navbar-light sticky-top">
     <div class= "container">
-      <a href= "#" class= "navbar-brand">DanteAdonis</a>
+      <a href= "#" class= "navbar-brand">DanteDevv</a>
       <button class= "navbar-toggler navbar-toggler-right collapsed" type= "button" data-toggle= "collapse" data-target= "#myNavbar" aria-controls= "myNavbar" aria-expanded= "false" aria-label= "toggle navigation">
         <span class= "navbar-toggler-icon"></span>
       </button>
@@ -54,40 +28,37 @@
           <li class= "nav-item"><a href= "#about" class= "nav-link">ABOUT</a></li>
           <li class= "nav-item"><a href= "#services" class= "nav-link">SERVICES</a></li>
           <li class= "nav-item"><a href= "#portfolio" class= "nav-link">PORTFOLIO</a></li>
-          <li class= "nav-item"><a href= "#pricing" class= "nav-link">PRICING</a></li>
           <li class= "nav-item"><a href= "#contact" class= "nav-link">CONTACT</a></li>
         </ul>
       </div>
     </div>
   </nav>
   <div class= "jumbotron jumbotron-fluid bg-dark text-center text-light">
-    <h1>DANTEADONIS</h1>
-    <p>Front-end Web Developer</p>
+    <h1>DANTEDEVV</h1>
+    <p>Web &amp; Game Developer</p>
   </div>
   <!-- ABOUT -->
   <div id= "about" class= "container-fluid mb-4">
     <div class= "row">
       <div class= "col-sm-8">
-        <h2>About Me</h2>
+        <u><h2>About Me</h2></u>
         <p>Hi there, my name is <strong>Samson D. Adegboye</strong>, everyone calls 
-          me Dante. I'm a front-end web developer. <br>I've always wanted to make 
-          my own games and apps ever since I was a kid, and this channelled my 
-          energy and career choice into what I'm studying in the university today: 
-          Computer Science. <br>Follow me as I code my way to the top.
-        </p>
-        <p>I'm working on a number of projects amd will upload them as soon as 
-          they're finished. There are a few of them on my <i>repos</i> list on 
-          <strong>GitHub</strong>, you can check them out 
-          <a href= "https://github.com/danteadonis?tab=repositories">here</a>. <br>Be sure to 
-          leave a star when you do. ;)
+          me Dante. <br>I'm a self-taught programmer whose 
+          specialty is front-end web development and game development, long story
+          short: <i>I make websites and games.</i>
         </p>
         <p>My hobbies include gaming, studying, and of course coding. <br> When 
-        I'm not indoors, I like strolling, swimming, and driving.</p>
-        <a href= "#contact"><button class= "btn btn-sm btn-outline-dark">Get In Touch</button></a>
+        I'm not indoors (which I mostly am), I like strolling, swimming, and 
+        driving.</p>
+        <p>I'm working on a number of projects and will upload them as soon as 
+          they're finished. There are a few of them below and on my 
+          <a href= "https://github.com/danteadonis?tab=repositories">GitHub</a>.
+        </p>
+        <a id= "getInTouch" href= "#contact"><button class= "btn btn-sm btn-outline-dark">Get In Touch</button></a>
       </div>
       <div class= "col-sm-4"><img id= "me" src= "images/me_1.png" alt= "an image of me"/></div>
       <div class= "col-sm-12 text-center slideanim">
-        <h2>My Skills</h2>
+        <u><h2>My Skills</h2></u>
         <hr/>
         <h5>Web</h5>
         <hr/>
@@ -107,13 +78,19 @@
           <div class= "col-sm-4">
             <h4>JavaScript</h4>
             <div class= "progress mb-3">
-              <div class= "progress-bar bg-secondary" role= "progressbar" style= "width:70%">70%</div>
+              <div class= "progress-bar bg-secondary" role= "progressbar" style= "width:75%">75%</div>
             </div>
           </div>
           <div class= "col-sm-4">
             <h4>Bootstrap</h4>
             <div class= "progress mb-3">
               <div class= "progress-bar bg-secondary" role= "progressbar" style= "width:90%">90%</div>
+            </div>
+          </div>
+          <div class= "col-sm-4">
+            <h4>Angular 7</h4>
+            <div class= "progress mb-3">
+              <div class= "progress-bar bg-secondary" role= "progressbar" style= "width:45%">45%</div>
             </div>
           </div>
         </div>
@@ -133,13 +110,19 @@
               <div class= "progress-bar bg-secondary" role= "progressbar" style= "width:80%">80%</div>
             </div>
           </div>
+          <div class= "col-sm-6">
+            <h4>C#</h4>
+            <div class= "progress mb-3">
+              <div class= "progress-bar bg-secondary" role= "progressbar" style= "width:70%">70%</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
   <!-- SERVICES -->
   <div id= "services" class= "container-fluid text-center mb-4 slideanim">
-    <h2>Services</h2>
+    <u><h2>Services</h2></u>
     <h5>What I Offer</h5>
     <br>
     <div class= "row">
@@ -177,14 +160,15 @@
   </div>
   <!-- PORTFOLIO -->
   <div id= "portfolio" class= "container-fluid text-center mb-4 slideanim">
-    <h2>Portfolio</h2>
-    <h5>What I've Done So Far</h5>
+    <u><h2>Portfolio</h2></u>
+    <h5 class= "mb-3">Some Projects</h5>
     <div class= "row text-center">
       <div class= "col-sm-4">
         <div class= "thumbnail">
-          <img src= "images/boots.jpeg" alt= ""/>
-          <p><strong>Something</strong></p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <img src= "images/Hockey-Pong Logo.png" alt= ""/>
+          <p><strong>Hockey-Pong</strong></p>
+          <p>The PC game.<br/>A sweet 2D mix between ice hockey and ping-pong, playable by one or two players.</p>
+          <a href= "#"><button class= "btn btn-sm btn-outline-dark">Download</button></a>
         </div>
       </div>
       <div class= "col-sm-4">
@@ -199,70 +183,13 @@
           <img src= "images/boots.jpeg" alt= ""/>
           <p><strong>Something</strong></p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- PRICING -->
-  <div id= "pricing" class= "container-fluid mb-4 slideanim">
-    <div class= "text-center">
-      <h2>Pricing</h2>
-      <h5>Choose a payment method that works for you.</h5>
-    </div>
-    <div class= "row">
-      <div class= "col-sm-4">
-        <div class= "card text-center mb-2">
-          <div class= "card-header"><h1>Basic</h1></div>
-          <div class= "card-body">
-            <p><strong>20</strong>Lorem</p>
-            <p><strong>15</strong>Ipsum</p>
-            <p><strong>10</strong>Dolor</p>
-            <p><strong>5</strong>Sit</p>
-          </div>
-          <div class= "card-footer">
-            <h3>$20</h3>
-            <h4 class= "text-muted">per month</h4>
-            <button class= "btn btn-lg bg-primary">Sign Up</button>
-          </div>
-        </div>
-      </div>
-      <div class= "col-sm-4">
-        <div class= "card text-center mb-2">
-          <div class= "card-header"><h1>Pro</h1></div>
-          <div class= "card-body">
-            <p><strong>30</strong>Lorem</p>
-            <p><strong>20</strong>Ipsum</p>
-            <p><strong>15</strong>Dolor</p>
-            <p><strong>10</strong>Sit</p>
-          </div>
-          <div class= "card-footer">
-            <h3>$30</h3>
-            <h4 class= "text-muted">per month</h4>
-            <button class= "btn btn-lg bg-primary">Sign Up</button>
-          </div>
-        </div>
-      </div>
-      <div class= "col-sm-4">
-        <div class= "card text-center mb-2">
-          <div class= "card-header"><h1>Premium</h1></div>
-          <div class= "card-body">
-            <p><strong>50</strong>Lorem</p>
-            <p><strong>30</strong>Ipsum</p>
-            <p><strong>20</strong>Dolor</p>
-            <p><strong>15</strong>Sit</p>
-          </div>
-          <div class= "card-footer">
-            <h3>$50</h3>
-            <h4 class= "text-muted">per month</h4>
-            <button class= "btn btn-lg bg-primary">Sign Up</button>
-          </div>
         </div>
       </div>
     </div>
   </div>
   <!-- CONTACT -->
   <div id= "contact" class= "container-fluid bg-gray text-light slideanim">
-    <h2 class= "text-center">Contact</h2>
+    <u><h2 class= "text-center">Contact</h2></u>
     <div class= "row">
       <div class= "col-sm-5">
         <p>Reach out to me, I'll get back to you within 24 hours. <i class="fa fa-hourglass"></i></p>
@@ -270,7 +197,7 @@
         <p><a href= "tel:+2348093711365" class= "contact-icons"><i class= "fa fa-phone"></i> +234 809 371 1365</a></p>
         <p><a href= "mailto:adegboye72@gmail.com" class= "contact-icons"><i class= "fa fa-envelope"></i> adegboye72@gmail.com</a></p>
         <p><a href= "https://github.com/danteadonis" class= "contact-icons"><i class= "fa fa-github"></i> danteadonis</a></p>
-        <p><a href= "https://twitter.com/intent/tweet?screen_name=danteadon1s" class= "contact-icons"><i class= "fa fa-twitter"></i> @danteadon1s</a></p>
+        <p><a href= "https://twitter.com/intent/tweet?screen_name=dante_d3vv" class= "contact-icons"><i class= "fa fa-twitter"></i> @dante_d3vv</a></p>
       </div>
       <div class= "col-sm-7">
         <form action= "mailto:adegboye72@gmail.com" class= "form-group">
@@ -298,7 +225,7 @@
   <script src= "http://maps.googleapis.com/maps/api/js"></script>
   <footer class= "container-fluid text-center slideanim">
     <a href= "#myPage" title= "Back To Top"><i class= "fa fa-chevron-up"></i></a>
-    <p>&copy; 2019 danteadonis.com</p>
+    <p>&copy; 2020 dantedevv.com</p>
   </footer>
 </body>
 </html>
